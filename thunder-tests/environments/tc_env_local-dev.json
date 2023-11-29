@@ -1,0 +1,14 @@
+{
+    "_id": "c2372f0c-6f2c-4117-a8da-4c4c469e860f",
+    "name": "Local Dev",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-11-28T10:57:30.518Z",
+    "modified": "2023-11-28T10:57:30.518Z",
+    "data": [
+        {
+            "name": "baseUrl",
+            "value": "http://127.0.0.1:8080"
+        }
+    ]
+}

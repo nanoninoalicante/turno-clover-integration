@@ -4,5 +4,44 @@
     "created": "2023-11-28T10:45:16.369Z",
     "sortNum": 10000,
     "folders": [],
-    "requests": []
+    "requests": [
+        {
+            "_id": "be9f57f4-5b0c-491e-93a2-3cc37f0eab97",
+            "colId": "344c8d03-14e7-4869-964e-fd62a4bb93f1",
+            "containerId": "",
+            "name": "Generate Signature",
+            "url": "{{baseUrl}}/clover-auth/signature",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-28T10:56:24.114Z",
+            "modified": "2023-11-28T15:38:50.744Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"transactionAmount\": {\n    \"total\": \"20.99\",\n    \"currency\": \"EUR\"\n  },\n  \"transactionType\": \"SALE\",\n  \"transactionNotificationURL\": \"https://showmethepaymentresult.com\",\n  \"expiration\": \"5102358400\",\n  \"authenticateTransaction\": true,\n  \"dynamicMerchantName\": \"A very cool merchant name\",\n  \"invoiceNumber\": \"INV1234\",\n  \"purchaseOrderNumber\": \"PO1042\",\n  \"hostedPaymentPageText\": \"A very cool merchant name\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b3ed1fe2-62bd-4e35-9325-ee3de0359431",
+            "colId": "344c8d03-14e7-4869-964e-fd62a4bb93f1",
+            "containerId": "",
+            "name": "Create Payment Link",
+            "url": "{{baseUrl}}/payments/create-payment-link",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-28T15:48:55.677Z",
+            "modified": "2023-11-29T09:40:42.755Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"transactionAmount\": {\n    \"total\": \"26.99\",\n    \"currency\": \"GBP\"\n  },\n  \"transactionType\": \"SALE\",\n  \"transactionNotificationURL\": \"https://showmethepaymentresult.com\",\n  \"expiration\": \"5102358400\",\n  \"authenticateTransaction\": true,\n  \"dynamicMerchantName\": \"A very cool merchant name\",\n  \"invoiceNumber\": \"INV1234\",\n  \"purchaseOrderNumber\": \"PO1042\",\n  \"hostedPaymentPageText\": \"A very cool merchant name\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
 }
